@@ -21,6 +21,9 @@ Node.js Kullandığı Paketler:
 
 Açıklama:
 
+Postgres 16 
+Node 20.11.1
+
 Postgres veritabanı backup yükledim veya frontend ve backend .env da beraber yüklü.(backup veritabanıda kullanıcı detaylı username: admin, password: admin)
 Postman koleksiyon todo çalışmak için Bearer Token Authentication gerekecek login kısmından token alabilriz.
 teşekkür ederim.
