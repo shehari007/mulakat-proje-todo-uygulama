@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "1135cd32-1260-4a99-9a0a-23a5e84f7202",
+		"name": "todo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23657450"
+	},
+	"item": [
+		{
+			"name": "getAll",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiaWF0IjoxNzE0MzIxOTM4LCJleHAiOjE3MTY5MTM5Mzh9.VEhVKdaJFXUdtSh25SXP-ErloAqO9bzeHjR38j0i5VY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/getAll",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOne/:id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiaWF0IjoxNzE0MzIxOTM4LCJleHAiOjE3MTY5MTM5Mzh9.VEhVKdaJFXUdtSh25SXP-ErloAqO9bzeHjR38j0i5VY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/getOne/18",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"getOne",
+						"18"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiaWF0IjoxNzE0MzIxOTM4LCJleHAiOjE3MTY5MTM5Mzh9.VEhVKdaJFXUdtSh25SXP-ErloAqO9bzeHjR38j0i5VY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"test text\",\r\n    \"time\": \"24.04.2024\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update/:id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiaWF0IjoxNzE0MzIxOTM4LCJleHAiOjE3MTY5MTM5Mzh9.VEhVKdaJFXUdtSh25SXP-ErloAqO9bzeHjR38j0i5VY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"text\": \"test text\",\r\n    \"time\": \"24.04.2024\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/update/19",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"update",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update/:id Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiaWF0IjoxNzE0MzIxOTM4LCJleHAiOjE3MTY5MTM5Mzh9.VEhVKdaJFXUdtSh25SXP-ErloAqO9bzeHjR38j0i5VY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"checked\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/updateCheck/19",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"updateCheck",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiaWF0IjoxNzE0MzIxOTM4LCJleHAiOjE3MTY5MTM5Mzh9.VEhVKdaJFXUdtSh25SXP-ErloAqO9bzeHjR38j0i5VY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/delete/20",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"delete",
+						"20"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

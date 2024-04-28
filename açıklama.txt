@@ -1,0 +1,28 @@
+React.js Kullandığı Paketler:
+
+* Ant Design 5+
+* @react-pdf/renderer
+* Axios
+* react
+* yup (ant design kullandığından yup ihtyiaçı kalmadı)
+
+Node.js Kullandığı Paketler:
+
+* bcrypt
+* cors
+* dotenv
+* express
+* JOI
+* JWT
+* nodemon
+* postgre
+* sequalize
+
+
+Açıklama:
+
+Postgres veritabanı backup yükledim veya frontend ve backend .env da beraber yüklü.(backup veritabanıda kullanıcı detaylı username: admin, password: admin)
+Postman koleksiyon todo çalışmak için Bearer Token Authentication gerekecek login kısmından token alabilriz.
+teşekkür ederim.
+
+
